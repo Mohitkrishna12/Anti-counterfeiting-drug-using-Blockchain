@@ -1,0 +1,19 @@
+.register{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 20px;
+
+}
+.reg_form{
+	display: flex;
+	flex-direction: column;
+	background-color: #F5F5F5;
+	border:1px solid #616161;
+	height: 500px;
+	width: 800px;
+	text-align: center;
+	align-items: center;
+	margin: 20px;
+
+}
