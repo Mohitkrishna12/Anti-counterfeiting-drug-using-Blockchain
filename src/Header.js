@@ -15,7 +15,7 @@ function Header({home}) {
 		</div>
 
 		{home?<div className="nav_btn">
-		<Link to="/login">
+		<Link to="/loginAs">
 			<button className="btn">Login</button>
 		</Link>
 		<Link to="/register">

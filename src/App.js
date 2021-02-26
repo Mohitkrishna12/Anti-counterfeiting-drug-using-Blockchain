@@ -2,8 +2,9 @@ import React from 'react';
 import Header from "./Header";
 import Home from "./Home";
 import {BrowserRouter as Router, Switch,Route} from "react-router-dom"
-import Login from "./Login"
+import LoginAs from "./LoginAs"
 import Register from "./Register"
+import Login from "./Login"
 
 
 function App() {
@@ -17,11 +18,15 @@ function App() {
         </Route>
       <Route path="/login">
           <Header home={false} />
-          <Login isNewUser={true} />
+          <Login />
+        </Route>
+      <Route path="/loginAs">
+          <Header home={false} />
+          <LoginAs isNewUser={true}  />
         </Route>
          <Route path="/register">
           <Header home={false} />
-          <Login isNewUser={false} />
+          <LoginAs isNewUser={false} />
         </Route>
       <Route path="/">
           <Header home={true} />
