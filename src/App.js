@@ -5,6 +5,7 @@ import {BrowserRouter as Router, Switch,Route} from "react-router-dom"
 import LoginAs from "./LoginAs"
 import Register from "./Register"
 import Login from "./Login"
+import UploadDetails from "./UploadDetails"
 
 
 function App() {
@@ -12,6 +13,10 @@ function App() {
     <Router>
       <div >
       <Switch>
+      <Route path="/Userlogin">
+          <Header home={false} />
+          <UploadDetails />
+        </Route>
       <Route path="/newUser">
           <Header home={false} />
           <Register />

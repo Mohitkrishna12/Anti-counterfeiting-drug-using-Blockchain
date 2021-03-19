@@ -1,0 +1,50 @@
+.uploadDetails{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 20px;
+
+}
+.details_form{
+	display: flex;
+	flex-direction: column;
+	background-color: #F5F5F5;
+	border:1px solid #616161;
+	height: 90%;
+	width: 80%;
+	text-align: left;
+	margin: 20px;
+
+}
+.details_heading{
+	margin: 30px;
+	text-align: center;
+}
+.details_heading h1{
+	margin: 10px;
+}
+
+.details_input{
+	
+	margin: 10px 20px 10px 100px;
+}
+.details_form form h4{
+	margin:0px 20px 5px 0px;
+}
+.details_form form input{
+	height: 20px;
+	margin-bottom: 20px;
+	background-color: white;
+	width: 50%;
+}
+.datails_form form button{
+	margin-left: 370px;
+}
+textarea{
+	
+	border: 2px solid black;
+	
+}
+.details_input  span{
+	color: red;
+}
