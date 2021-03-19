@@ -65,3 +65,32 @@
   background: #db770d;
   text-decoration: none;
 }
+.req_upl{
+	height:100%;
+	width: 80%;
+	margin:50px;	
+}
+.upload_btn2 {
+	margin: 0px auto;
+	padding: 0px 10px;
+	height: 35px;
+	width: 200px;
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 5px;
+  font-family: Georgia;
+  color: #232f34;
+  font-size: 20px;
+  background: #f9aa33;
+  border: solid #f9aa33 2px;
+  text-decoration: none;
+}
+
+.upload_btn2:hover {
+  background: #db770d;
+  text-decoration: none;
+}
+.DmUpload{
+	display: flex;
+	flex-direction: row;
+}

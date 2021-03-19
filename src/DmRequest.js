@@ -1,8 +1,8 @@
 import React,{useState} from 'react'
-import "./RmUpload.css";
+import "./Upload.css";
 
 
-function RmUpload() {
+function DmRequest() {
 	const [fields, setFields] = useState([{ value: null }]);
 
   function handleChange(i, event) {
@@ -18,7 +18,7 @@ function RmUpload() {
   }
 
 	return (
-		<div className="RmUpload">
+		<div className="DmRequest">
 			<div className="uploadForm">
 			<form className="upload_form_layout"> 
 			<div className="upload_input">
@@ -55,4 +55,4 @@ function RmUpload() {
 	)
 }
 
-export default RmUpload
+export default DmRequest

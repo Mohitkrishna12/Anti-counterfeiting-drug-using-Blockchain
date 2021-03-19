@@ -6,6 +6,7 @@ import LoginAs from "./LoginAs"
 import Register from "./Register"
 import Login from "./Login"
 import UploadDetails from "./UploadDetails"
+import DmRequest from "./DmRequest"
 
 
 function App() {
@@ -13,6 +14,10 @@ function App() {
     <Router>
       <div >
       <Switch>
+       <Route path="/DmRequest">
+          <Header home={false} />
+          <DmRequest />
+        </Route>
       <Route path="/Userlogin">
           <Header home={false} />
           <UploadDetails />
