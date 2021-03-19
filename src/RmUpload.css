@@ -1,0 +1,21 @@
+.uploadForm{
+	display: flex;
+	text-align: left;
+	margin: 20px 100px ;
+
+}
+.upload_form_layout{
+	display: flex;
+	flex-direction: column;
+}
+.upload_input{
+	display: flex;
+	flex-direction: row;
+	margin: 10px 20px 10px 20px;
+}
+.uploadForm form input{
+	height: 20px;
+	margin-bottom: 20px;
+	background-color: white;
+	width: 100%;
+}

@@ -1,38 +1,51 @@
-import React from 'react'
+import React,{useState} from 'react'
 import "./RmUpload.css";
 
+
 function RmUpload() {
+	const [fields, setFields] = useState([{ value: null }]);
+
+  function handleChange(i, event) {
+    const values = [...fields];
+    values[i].value = event.target.value;
+    setFields(values);
+  }
+
+	 function handleAdd() {
+    const values = [...fields];
+    values.push({ value: null });
+    setFields(values);
+  }
+
 	return (
 		<div className="RmUpload">
 			<div className="uploadForm">
-			<form className="reg_form_layout">
-		<div className="reg_input"> 
-			<h4> Name  <span>*</span> </h4>
-    	<input type="text" name="name" />
+			<form className="upload_form_layout">
+		<div className="upload_input"> 
+			<h4> Name </h4>
+    		<input type="text" name="name" />
+    		<h4>Quantity </h4>
+    		<input type="text" name="name" />
+    		 <button type="button" onClick={() => handleAdd()}>
+        +
+      </button>
 		</div>
-		<div className="reg_input"> 
-			<h4>Country  <span>*</span> </h4>
-    	<input type="text" name="name" />
+		<div className="upload_input"> 
+			 {fields.map((field, idx) => {
+        return (
+          <div key={`${field}-${idx}`}>
+            <input
+              type="text"
+              placeholder="Enter text"
+              onChange={e => handleChange(idx, e)}
+            />
+            
+          </div>
+        );
+      })}
 		</div>
-		<div className="reg_input"> 
-			<h4>State  <span>*</span> </h4>
-    	<input type="text" name="name" />
-		</div>
-		<div className="reg_input"> 
-			<h4>Address  <span>*</span> </h4>
-    	<textarea rows="4" cols="50" name="comment" />
-		</div>
-		<div className="reg_input">
-		<h4>  License  <span>*</span> </h4>
 		
-			
-    	<input type="text" name="name" />
-		</div>
-		<div className="reg_input"> 
-			<h4>Valid Upto  <span>*</span> </h4>
-    	<input type="date" name="name" />
-		</div>
-		<button className="login_btn">Register</button>	
+     
 		</form>	
 				
 			</div>
