@@ -7,6 +7,7 @@
 .upload_form_layout{
 	display: flex;
 	flex-direction: column;
+	
 }
 .upload_input{
 	display: flex;
@@ -16,6 +17,51 @@
 .uploadForm form input{
 	height: 20px;
 	margin-bottom: 20px;
+	margin-right: 20px;
 	background-color: white;
 	width: 100%;
+}
+.uploadForm form h4{
+	width: 50%;
+}
+
+
+.upload_btn {
+	margin: 0px 10px;
+	padding: 0px 10px;
+	height: 35px;
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 50px;
+  font-family: Georgia;
+  color: #232f34;
+  font-size: 20px;
+  background: #f9aa33;
+  border: solid #f9aa33 2px;
+  text-decoration: none;
+}
+
+.upload_btn:hover {
+  background: #db770d;
+  text-decoration: none;
+}
+.upload_btn1 {
+	margin: 0px auto;
+	padding: 0px 10px;
+	height: 35px;
+	width: 120px;
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 5px;
+  font-family: Georgia;
+  color: #232f34;
+  font-size: 20px;
+  background: #f9aa33;
+  border: solid #f9aa33 2px;
+  text-decoration: none;
+}
+
+.upload_btn1:hover {
+  background: #db770d;
+  text-decoration: none;
 }

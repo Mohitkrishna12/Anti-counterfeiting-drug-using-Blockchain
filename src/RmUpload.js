@@ -20,31 +20,33 @@ function RmUpload() {
 	return (
 		<div className="RmUpload">
 			<div className="uploadForm">
-			<form className="upload_form_layout">
-		<div className="upload_input"> 
-			<h4> Name </h4>
+			<form className="upload_form_layout"> 
+			<div className="upload_input">
+            <h4> Manufacturer Name</h4>
+    		<input type="text" name="name" />
+            </div>
+            <div className="upload_input" >
+            	<h4>Drug Unique No </h4>
+    		<input type="text" name="name" />
+            </div>
+			 {fields.map((field, idx) => {
+        return (
+
+          <div key={`${field}-${idx}`}>
+          <div className="upload_input">
+            <h4> Name </h4>
     		<input type="text" name="name" />
     		<h4>Quantity </h4>
     		<input type="text" name="name" />
-    		 <button type="button" onClick={() => handleAdd()}>
-        +
-      </button>
-		</div>
-		<div className="upload_input"> 
-			 {fields.map((field, idx) => {
-        return (
-          <div key={`${field}-${idx}`}>
-            <input
-              type="text"
-              placeholder="Enter text"
-              onChange={e => handleChange(idx, e)}
-            />
-            
+    		 <button className="upload_btn" type="button" onClick={() => handleAdd()}>
+       			 +
+      		</button>
+            </div>
           </div>
         );
       })}
-		</div>
 		
+		<button className="upload_btn1">upload</button>	
      
 		</form>	
 				
