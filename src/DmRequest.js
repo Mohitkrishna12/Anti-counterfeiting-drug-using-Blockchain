@@ -40,6 +40,10 @@ function DmRequest() {
     		<input type="text" name="name"  />
             </div>
             <div className="upload_input" >
+            	<h4>Drug Name </h4>
+    		<input type="text" name="name"  />
+            </div>
+            <div className="upload_input" >
             	<h4>Drug Unique No </h4>
     		<input type="text" name="name" value={rnum} />
             </div>
