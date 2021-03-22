@@ -13,8 +13,13 @@ function DmUpload() {
 		<div className="req_upl">
 		<Link to="/DMUploaded">
 			<button className="upload_btn2">upload Details</button>	
-		</Link>		
+		</Link>	
 		</div>
+		<div className="req_upl">
+		<Link to="/DMUploaded">
+			<button className="upload_btn2">Approval & Testing</button>	
+		</Link>	
+		</div>	
 		</div>
 	)
 }
