@@ -9,6 +9,7 @@ import UploadDetails from "./UploadDetails"
 import DmRequest from "./DmRequest"
 import DmReqSuccessfull from './DmReqSuccessfull'
 import AppTest from "./AppTest";
+import DmProduction from "./DmProduction"
 
 
 function App() {
@@ -16,6 +17,10 @@ function App() {
     <Router>
       <div >
       <Switch>
+      <Route path="/DmProduction">
+          <Header home={false} />
+          <DmProduction />
+        </Route>
       <Route path="/AppTest">
           <Header home={false} />
           <AppTest />
