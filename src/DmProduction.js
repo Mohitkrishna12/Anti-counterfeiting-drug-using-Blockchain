@@ -54,14 +54,26 @@ function DmProduction() {
             	<h4>Drug Unique No </h4>
     		<input type="text" name="name"  />
             </div>	
+            <div className="upload_input" >
+            	<h4>No of Drugs Manufactured </h4>
+    		<input type="text" name="name"  />
+            </div>	
+            <div className="upload_input" >
+            	<h4>Aprroved by Drug Administrator (Yes/No)</h4>
+    		<input type="text" name="name"  />
+            </div>	
 			 {fields.map((field, idx) => {
         return (
 
           <div key={`${field}-${idx}`}>
           <div className="upload_input">
-            <h4> Name </h4>
+            <h4>Batch Number</h4>
     		<input type="text" name="name" />
     		<h4>Quantity </h4>
+    		<input type="text" name="name" />
+    		<h4>From </h4>
+    		<input type="text" name="name" />
+    		<h4>To </h4>
     		<input type="text" name="name" />
     		 <button className="upload_btn" type="button" onClick={() => handleAdd()}>
        			 +

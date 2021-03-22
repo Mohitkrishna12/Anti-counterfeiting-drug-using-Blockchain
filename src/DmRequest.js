@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 function DmRequest() {
 	const getDateTime= new Date().toLocaleString('en-IN');
 	const [fields, setFields] = useState([{ value: null }]);
-	const [rnum,setrnum]=useState("000000000000");
+	const [rnum,setrnum]=useState("000000");
 
   function handleChange(i, event) {
     const values = [...fields];
@@ -20,7 +20,7 @@ function DmRequest() {
     setFields(values);
   }
   const generateRNUM=()=>{
-  	const num=Math.floor((Math.random()*1000000000000)+1);
+  	const num=Math.floor((Math.random()*1000000)+1);
   	setrnum(num);
   }
 
