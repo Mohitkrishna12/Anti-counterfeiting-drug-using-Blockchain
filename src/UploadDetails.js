@@ -1,9 +1,9 @@
 import React from 'react'
 import "./UploadDetails.css"
 import {useStateValue} from "./StateProvider";
-// import RmUpload from "./RmUpload";
+import RmUpload from "./RmUpload";
 import DmUpload from "./DmUpload";
-// import DaUpload from "./DaUpload";
+import DaUpload from "./DaUpload";
 // import DdUpload from "./DdUpload";
 // import PoUpload from "./PoUpload";
 
@@ -14,21 +14,21 @@ function UploadDetails() {
 	const [state, dispatch]=useStateValue();
 	const currentUser=()=>{
 		switch(state.role){
-			// case "Raw Material Supplier":
-   //  		 return (<div>
-   //  		 		<RmUpload />
-   //  		 	</div>);
-   //  		break;
+			case "Raw Material Supplier":
+    		 return (<div>
+    		 		<RmUpload />
+    		 	</div>);
+    		break;
   			case "Drug Manufacturer":
    		 	return (<div>
     		 		<DmUpload />
     		 	</div>);
 		    break;
-		    // case "Drug Administrator":
-   		 // 	return (<div>
-    		//  		<RmUpload />
-    		//  	</div>);
-		    // break;
+		    case "Drug Administrator":
+   		 	return (<div>
+    		 		<DaUpload />
+    		 	</div>);
+		    break;
 		    // case "Drug Distributer":
    		 // 	return (<div>
     		//  		<RmUpload />

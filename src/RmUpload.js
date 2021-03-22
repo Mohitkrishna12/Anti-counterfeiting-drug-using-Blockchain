@@ -1,12 +1,12 @@
 import React from 'react'
 import {Link} from "react-router-dom"
 
-function DaUpload() {
+function RmUpload() {
 	return (
-		<div className="DaUpload">
+		<div className="RmUpload">
 		<div className="req_upl">
 		 <Link to="/RmRequest">
-			<button className="upload_btn2">Approval Request</button>
+			<button className="upload_btn2">Process Request</button>
 		</Link>
 		</div>
 		<div className="req_upl">
@@ -15,7 +15,10 @@ function DaUpload() {
 		</Link>	
 		</div>
 		</div>
+			
+			
+		
 	)
 }
 
-export default DaUpload
+export default RmUpload
