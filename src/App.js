@@ -7,6 +7,7 @@ import Register from "./Register"
 import Login from "./Login"
 import UploadDetails from "./UploadDetails"
 import DmRequest from "./DmRequest"
+import DmReqSuccessfull from './DmReqSuccessfull'
 
 
 function App() {
@@ -14,6 +15,10 @@ function App() {
     <Router>
       <div >
       <Switch>
+      <Route path="/DmReqSuccessfull">
+          <Header home={false} />
+          <DmReqSuccessfull />
+        </Route>
        <Route path="/DmRequest">
           <Header home={false} />
           <DmRequest />

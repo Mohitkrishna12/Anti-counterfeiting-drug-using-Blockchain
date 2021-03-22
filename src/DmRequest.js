@@ -1,8 +1,10 @@
 import React,{useState} from 'react'
 import "./Upload.css";
+import {Link} from 'react-router-dom';
 
 
 function DmRequest() {
+	const getDateTime= new Date().toLocaleString('en-IN');
 	const [fields, setFields] = useState([{ value: null }]);
 	const [rnum,setrnum]=useState("000000000000");
 
@@ -40,6 +42,14 @@ function DmRequest() {
     		<input type="text" name="name"  />
             </div>
             <div className="upload_input" >
+            	<h4>Raw Material Supplier Name </h4>
+    		<input type="text" name="name"  />
+            </div>
+            <div className="upload_input" >
+            	<h4>Date and Time </h4>
+    		<input type="text" name="name" value={getDateTime} />
+            </div>
+            <div className="upload_input" >
             	<h4>Drug Name </h4>
     		<input type="text" name="name"  />
             </div>
@@ -64,9 +74,9 @@ function DmRequest() {
           </div>
         );
       })}
-		
+		<Link to="/DmReqSuccessfull">
 		<button className="upload_btn1">Request</button>	
-     
+     	</Link>
 		</form>	
 				</div>
 				</div>
