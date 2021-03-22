@@ -6,16 +6,12 @@ function DaUpload() {
 		<div className="DaUpload">
 		<div className="req_upl">
 		 <Link to="/RmRequest">
-			<button className="upload_btn2">Approval Request</button>
+			<button className="upload_btn2">Approval Requests</button>
 		</Link>
-		</div>
-		<div className="req_upl">
-		<Link to="/RMUploaded">
-			<button className="upload_btn2">Upload Details</button>	
-		</Link>	
 		</div>
 		</div>
 	)
 }
 
 export default DaUpload
+

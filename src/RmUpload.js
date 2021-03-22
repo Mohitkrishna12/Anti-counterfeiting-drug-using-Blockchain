@@ -9,11 +9,6 @@ function RmUpload() {
 			<button className="upload_btn2">Process Request</button>
 		</Link>
 		</div>
-		<div className="req_upl">
-		<Link to="/RMUploaded">
-			<button className="upload_btn2">Upload Details</button>	
-		</Link>	
-		</div>
 		</div>
 			
 			
