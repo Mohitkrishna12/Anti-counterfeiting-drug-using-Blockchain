@@ -5,7 +5,7 @@ function DmReqSuccessfull() {
 	return (
 		<div className="DmReqSuccessfull">
 			<div className="details_heading">
-			<h1>Request Sent Successfully </h1>
+			<h1>Request Sent Successfully to Raw Material Supplier </h1>
 			<Link to="/Userlogin">
 		<button className="upload_btn1">Back</button>	
      	</Link>
