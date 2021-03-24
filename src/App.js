@@ -13,6 +13,7 @@ import DmProduction from "./DmProduction"
 import DmDistribution from "./DmDistribution"
 import DdTrans from "./DdTrans"
 import DdDelivery from "./DdDelivery"
+import PoReceived from "./PoReceived"
 
 
 function App() {
@@ -20,6 +21,10 @@ function App() {
     <Router>
       <div >
       <Switch>
+      <Route path="/PoReceived">
+          <Header home={false} />
+          <PoReceived />
+        </Route>
       <Route path="/DdDelivery">
           <Header home={false} />
           <DdDelivery />

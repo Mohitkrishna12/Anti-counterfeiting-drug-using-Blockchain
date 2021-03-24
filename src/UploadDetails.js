@@ -5,7 +5,7 @@ import RmUpload from "./RmUpload";
 import DmUpload from "./DmUpload";
 import DaUpload from "./DaUpload";
 import DdUpload from "./DdUpload";
-// import PoUpload from "./PoUpload";
+import PoUpload from "./PoUpload";
 
 
 
@@ -34,15 +34,15 @@ function UploadDetails() {
     		 		<DdUpload />
     		 	</div>);
 		    break;
-		    // case "Pharmacurtical Owner":
-   		 // 	return (<div>
-    		//  		<RmUpload />
-    		//  	</div>);
-		    // break;
-		    // default :
-		    // return (<div>
-    		//  		<RmUpload />
-    		//  	</div>);
+		    case "Pharmacurtical Owner":
+   		 	return (<div>
+    		 		<PoUpload />
+    		 	</div>);
+		    break;
+		    default :
+		    return (<div>
+    		 		<RmUpload />
+    		 	</div>);
 
 		  	
 		} 
