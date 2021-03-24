@@ -11,6 +11,7 @@ import DmReqSuccessfull from './DmReqSuccessfull'
 import AppTest from "./AppTest";
 import DmProduction from "./DmProduction"
 import DmDistribution from "./DmDistribution"
+import DdTrans from "./DdTrans"
 
 
 function App() {
@@ -18,6 +19,10 @@ function App() {
     <Router>
       <div >
       <Switch>
+      <Route path="/DdTrans">
+          <Header home={false} />
+          <DdTrans />
+        </Route>
       <Route path="/DmDistribution">
           <Header home={false} />
           <DmDistribution />
