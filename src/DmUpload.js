@@ -21,7 +21,7 @@ function DmUpload() {
 		</Link>	
 		</div>
 		<div className="req_upl">
-		<Link to="/AppTest">
+		<Link to="/DmDistribution">
 			<button className="upload_btn2">Distribution</button>	
 		</Link>	
 		</div>	

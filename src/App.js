@@ -10,6 +10,7 @@ import DmRequest from "./DmRequest"
 import DmReqSuccessfull from './DmReqSuccessfull'
 import AppTest from "./AppTest";
 import DmProduction from "./DmProduction"
+import DmDistribution from "./DmDistribution"
 
 
 function App() {
@@ -17,6 +18,10 @@ function App() {
     <Router>
       <div >
       <Switch>
+      <Route path="/DmDistribution">
+          <Header home={false} />
+          <DmDistribution />
+        </Route>
       <Route path="/DmProduction">
           <Header home={false} />
           <DmProduction />
