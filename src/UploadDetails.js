@@ -4,7 +4,7 @@ import {useStateValue} from "./StateProvider";
 import RmUpload from "./RmUpload";
 import DmUpload from "./DmUpload";
 import DaUpload from "./DaUpload";
-// import DdUpload from "./DdUpload";
+import DdUpload from "./DdUpload";
 // import PoUpload from "./PoUpload";
 
 
@@ -29,11 +29,11 @@ function UploadDetails() {
     		 		<DaUpload />
     		 	</div>);
 		    break;
-		    // case "Drug Distributer":
-   		 // 	return (<div>
-    		//  		<RmUpload />
-    		//  	</div>);
-		    // break;
+		    case "Drug Distributer":
+   		 	return (<div>
+    		 		<DdUpload />
+    		 	</div>);
+		    break;
 		    // case "Pharmacurtical Owner":
    		 // 	return (<div>
     		//  		<RmUpload />
