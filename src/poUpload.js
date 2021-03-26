@@ -6,7 +6,7 @@ function PoUpload() {
 	return (
 		<div className="PoUpload">
 			<div className="req_upl">
-		 <Link to="/PoRecieved">
+		 <Link to="/PoReceived">
 			<button className="upload_btn2">Receieved Drugs</button>
 		</Link>
 		</div>

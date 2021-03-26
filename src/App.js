@@ -14,6 +14,7 @@ import DmDistribution from "./DmDistribution"
 import DdTrans from "./DdTrans"
 import DdDelivery from "./DdDelivery"
 import PoReceived from "./PoReceived"
+import PoBill from "./PoBill"
 
 
 function App() {
@@ -21,6 +22,10 @@ function App() {
     <Router>
       <div >
       <Switch>
+       <Route path="/PoBill">
+          <Header home={false} />
+          <PoBill />
+        </Route>
       <Route path="/PoReceived">
           <Header home={false} />
           <PoReceived />

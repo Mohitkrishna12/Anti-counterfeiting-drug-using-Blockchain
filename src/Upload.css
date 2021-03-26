@@ -116,3 +116,23 @@
 	display: flex;
 	flex-direction: row;
 }
+.upload_btn3 {
+	margin: 0px auto;
+	padding: 0px 10px;
+	height: 35px;
+	width: 230px;
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 5px;
+  font-family: Georgia;
+  color: #232f34;
+  font-size: 20px;
+  background: #f9aa33;
+  border: solid #f9aa33 2px;
+  text-decoration: none;
+}
+
+.upload_btn3:hover {
+  background: #db770d;
+  text-decoration: none;
+}

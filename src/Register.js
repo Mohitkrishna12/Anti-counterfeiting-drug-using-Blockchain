@@ -37,10 +37,6 @@ function Register({props}) {
     	<input type="text" name="name" />
 		</div>
 		<div className="reg_input"> 
-			<h4>Country  <span>*</span> </h4>
-    	<input type="text" name="name" />
-		</div>
-		<div className="reg_input"> 
 			<h4>State  <span>*</span> </h4>
     	<input type="text" name="name" />
 		</div>
@@ -57,6 +53,10 @@ function Register({props}) {
 		<div className="reg_input"> 
 			<h4>Valid Upto  <span>*</span> </h4>
     	<input type="date" name="name" />
+		</div>
+		<div className="reg_input"> 
+			<h4>Password  <span>*</span> </h4>
+    	<input type="text" name="name" />
 		</div>
 		<button className="login_btn">Register</button>	
 		</form>	
